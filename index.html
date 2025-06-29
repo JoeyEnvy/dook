@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efreh | Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 30px 0;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            background-color: #ffcc00;
+            padding: 50px;
+            color: #fff;
+            justify-content: center;
+        }
+        .hero img {
+            width: 40%;
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .service-item h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                margin: 0 0 20px 0;
+            }
+            .service-item {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+            .service-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>efreh</h1>
+        <p>Your Ultimate Retail Experience</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="https://images.pexels.com/photos/1050280/pexels-photo-1050280.jpeg" alt="Retail Experience">
+            <div>
+                <h2>Welcome to efreh</h2>
+                <p>At efreh, we redefine the retail experience by blending tradition with innovation. Our mission is to provide tailored solutions that ensure our customers receive the best service possible, whether in-store or online.</p>
+            </div>
+        </section>
+        <section>
+            <h2>About efreh</h2>
+            <p>efreh was born out of the desire to transform the conventional retail landscape into an interactive, customer-centric environment. Our diverse team is composed of retail specialists, technology innovators, and customer service experts, all committed to delivering excellence. Our audience ranges from local shoppers to global consumers, each seeking a unique, personalized shopping experience.</p>
+            <p>Our mission is simple: to elevate the retail experience for our customers. We believe in creating a space where shopping is not just a task but an enjoyable journey. With a strong emphasis on quality, variety, and customer satisfaction, efreh stands at the forefront of retail innovation.</p>
+            <div>
+                <ul>
+                    <li>Customized shopping experiences</li>
+                    <li>Exclusive product lines</li>
+                    <li>Seamless online and offline integration</li>
+                    <li>Expert customer support</li>
+                    <li>Regular community events</li>
+                </ul>
+            </div>
+        </section>
+        <section class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-laptop fa-2x"></i>
+                <h3>Online Shopping</h3>
+                <p>Enjoy a seamless online shopping experience with our user-friendly platform and fast delivery options.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-store fa-2x"></i>
+                <h3>In-Store Services</h3>
+                <p>Visit our store for personalized service and exclusive access to new launches and events.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-headset fa-2x"></i>
+                <h3>Customer Support</h3>
+                <p>Our dedicated team is here to assist you with any inquiries, ensuring your satisfaction is our top priority.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <blockquote>"efreh has revolutionized my shopping habits. Their customer service is unmatched, and the product range is outstanding!" - Sarah T.</blockquote>
+            <blockquote>"A remarkable retail experience! From the moment I stepped in, I felt valued and catered to. Highly recommend!" - James L.</blockquote>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button>Send Message</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 efreh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
